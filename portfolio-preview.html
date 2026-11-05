@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ayanfe Ajibola — Backend Developer</title>
+<meta name="description" content="Backend developer building APIs and data systems with Node.js, Express, MongoDB, and NestJS." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="grain"></div>
+
+<nav class="topbar">
+  <span class="topbar-name">Ayanfe<span class="dot">.</span>dev</span>
+  <div class="topbar-links">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#stack">Stack</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <a class="topbar-cv" href="Ayanfe_CV.pdf" download>Résumé ↓</a>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-text">
+    <p class="eyebrow"><span class="status-dot"></span> Open for backend work</p>
+    <h1>I build the part<br>of the app you<br><em>never see</em> —<br>and trust anyway.</h1>
+    <p class="hero-sub">Backend developer focused on APIs, databases, and the systems that hold a product together. Currently building a multi-restaurant ordering &amp; delivery platform, and collaborating on a hiring platform's applicant pipeline.</p>
+    <div class="hero-actions">
+      <a href="#work" class="btn btn-primary">See the work ↓</a>
+      <a href="mailto:ayanfeoluwaayodele21@gmail.com" class="btn btn-ghost">Get in touch</a>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="terminal-window" id="terminal">
+      <div class="terminal-bar">
+        <span class="tb-dot red"></span><span class="tb-dot yellow"></span><span class="tb-dot green"></span>
+        <span class="terminal-title">api — zsh</span>
+      </div>
+      <div class="terminal-body" id="terminal-body"></div>
+    </div>
+    <div class="git-card">
+      <div class="git-card-head">
+        <span class="git-dot"></span> git
+      </div>
+      <div class="git-line">✓ feat: add order-status webhook</div>
+      <div class="git-line dim">4 files changed, 82 insertions(+)</div>
+    </div>
+  </div>
+</header>
+
+<!-- MARQUEE -->
+<section class="marquee-wrap" aria-hidden="true">
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>Node.js</span><span>Express</span><span>MongoDB</span><span>NestJS</span><span>Prisma</span><span>PostgreSQL</span><span>JWT</span><span>REST APIs</span><span>Git</span>
+      <span>Node.js</span><span>Express</span><span>MongoDB</span><span>NestJS</span><span>Prisma</span><span>PostgreSQL</span><span>JWT</span><span>REST APIs</span><span>Git</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT / PROFILE -->
+<section class="about" id="about">
+  <div class="about-copy">
+    <p class="eyebrow">About</p>
+    <h2>Systems before screens.</h2>
+    <p>I'm a Computer Science &amp; Mathematics student at Obafemi Awolowo University, currently on an industrial placement at Web79 as a backend developer. I care about how data moves — how a request becomes a row in a database, how an order becomes a rider's next stop.</p>
+    <p>Most of what I build has no interface of its own. It's the layer other things stand on: authentication, schemas, endpoints that hold up under real use. I also teach frontend fundamentals — JavaScript, HTML, CSS — to students at my placement, which keeps me honest about explaining things clearly, not just making them work.</p>
+  </div>
+
+  <div class="profile-card">
+    <div class="profile-row">
+      <span class="profile-icon">🎓</span>
+      <div><strong>Computer Science &amp; Mathematics</strong><br><span class="dim">Obafemi Awolowo University</span></div>
+    </div>
+    <div class="profile-row">
+      <span class="profile-icon">⚙️</span>
+      <div><strong>Backend Developer</strong><br><span class="dim">Node.js · Express · MongoDB · NestJS</span></div>
+    </div>
+    <div class="profile-row">
+      <span class="profile-icon">📍</span>
+      <div><strong>Based in Nigeria</strong><br><span class="dim">Open to remote work</span></div>
+    </div>
+    <div class="profile-row">
+      <span class="profile-icon">💼</span>
+      <div><strong>Open for work</strong><br><span class="dim">Freelance · Internship · Junior roles</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="work" id="work">
+  <p class="eyebrow">Selected work</p>
+  <h2>Things I've built.</h2>
+  <p class="section-sub">No screenshots — because the interesting part isn't the UI. Here's what's underneath.</p>
+
+  <div class="project-grid">
+
+    <article class="project-card featured">
+      <div class="project-visual">
+        <div class="mini-terminal">
+          <div class="mini-terminal-bar"><span></span><span></span><span></span></div>
+          <pre class="mini-code"><span class="c-method">POST</span> /api/orders
+<span class="c-dim">{</span>
+  <span class="c-key">"restaurant"</span>: <span class="c-str">"Mama Kudi's Kitchen"</span>,
+  <span class="c-key">"items"</span>: [<span class="c-str">"jollof rice"</span>, <span class="c-str">"suya"</span>],
+  <span class="c-key">"status"</span>: <span class="c-str">"pending"</span>,
+  <span class="c-key">"rider"</span>: <span class="c-null">null</span>
+<span class="c-dim">}</span>
+<span class="c-ok">→ 201 Created</span></pre>
+        </div>
+      </div>
+      <div class="project-info">
+        <div class="project-title-row">
+          <h3>Restaurant Ordering &amp; Delivery Platform</h3>
+          <span class="tag-status">In progress</span>
+        </div>
+        <p>A full-stack marketplace where users browse multiple restaurants, place orders, and track delivery in real time — with a separate flow for riders to pick up and fulfill orders.</p>
+        <ul class="project-points">
+          <li>Multi-restaurant catalog and ordering logic</li>
+          <li>Order-status lifecycle from placed → delivered</li>
+          <li>Rider-side flow for order fulfillment</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MongoDB</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-visual">
+        <div class="mini-terminal">
+          <div class="mini-terminal-bar"><span></span><span></span><span></span></div>
+          <pre class="mini-code"><span class="c-method">POST</span> /apply/:roleSlug
+<span class="c-dim">{</span>
+  <span class="c-key">"applicantId"</span>: <span class="c-str">"a1b2"</span>,
+  <span class="c-key">"roleSlug"</span>: <span class="c-str">"backend-intern"</span>,
+  <span class="c-key">"stage"</span>: <span class="c-str">"screening"</span>
+<span class="c-dim">}</span>
+<span class="c-ok">→ 201 Created</span></pre>
+        </div>
+      </div>
+      <div class="project-info">
+        <div class="project-title-row">
+          <h3>Conflux — Applications &amp; ATS Module</h3>
+          <span class="tag-status">Team project</span>
+        </div>
+        <p>The applicant-tracking module of a hiring platform, built with a small team of peers. I own the Applications schema and endpoints that move a candidate through the pipeline.</p>
+        <ul class="project-points">
+          <li>Prisma schema design for the Application entity</li>
+          <li>NestJS module structure: controller, service, DTOs</li>
+          <li>Endpoint testing against PostgreSQL</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">NestJS</span><span class="tag">Prisma</span><span class="tag">PostgreSQL</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-visual">
+        <div class="mini-terminal">
+          <div class="mini-terminal-bar"><span></span><span></span><span></span></div>
+          <pre class="mini-code"><span class="c-method">POST</span> /auth/login
+<span class="c-dim">{</span>
+  <span class="c-key">"role"</span>: <span class="c-str">"librarian"</span>,
+  <span class="c-key">"token"</span>: <span class="c-str">"eyJhbGciOi..."</span>
+<span class="c-dim">}</span>
+<span class="c-ok">→ 200 OK</span></pre>
+        </div>
+      </div>
+      <div class="project-info">
+        <div class="project-title-row">
+          <h3>Role-Based Book Management API</h3>
+        </div>
+        <p>An API for managing a library's books and users, with role-based permissions and token-based authentication.</p>
+        <ul class="project-points">
+          <li>User and book models with defined roles</li>
+          <li>Auth middleware using JWT and Passport.js</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">Node.js</span><span class="tag">JWT</span><span class="tag">Passport.js</span><span class="tag">OAuth</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-visual">
+        <div class="mini-terminal">
+          <div class="mini-terminal-bar"><span></span><span></span><span></span></div>
+          <pre class="mini-code"><span class="c-method">GET</span> /notes/8841
+<span class="c-dim">{</span>
+  <span class="c-key">"title"</span>: <span class="c-str">"Lecture recap"</span>,
+  <span class="c-key">"owner"</span>: <span class="c-str">"user_29"</span>
+<span class="c-dim">}</span>
+<span class="c-ok">→ 200 OK</span></pre>
+        </div>
+      </div>
+      <div class="project-info">
+        <div class="project-title-row">
+          <h3>Notes API with Authentication</h3>
+        </div>
+        <p>A CRUD API for personal notes, scoped so each user can only read and edit their own.</p>
+        <ul class="project-points">
+          <li>Full CRUD with authenticated access</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MongoDB</span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- STACK -->
+<section class="stack" id="stack">
+  <p class="eyebrow">Toolkit</p>
+  <h2>What I build with.</h2>
+  <div class="stack-grid">
+    <div class="stack-group">
+      <h4>Languages &amp; Frameworks</h4>
+      <div class="tag-row"><span class="tag">JavaScript</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">NestJS</span></div>
+    </div>
+    <div class="stack-group">
+      <h4>Databases</h4>
+      <div class="tag-row"><span class="tag">MongoDB</span><span class="tag">PostgreSQL</span><span class="tag">Prisma ORM</span><span class="tag">SQL</span></div>
+    </div>
+    <div class="stack-group">
+      <h4>Auth &amp; APIs</h4>
+      <div class="tag-row"><span class="tag">JWT</span><span class="tag">Passport.js</span><span class="tag">OAuth</span><span class="tag">REST</span></div>
+    </div>
+    <div class="stack-group">
+      <h4>Frontend (teaching &amp; support)</h4>
+      <div class="tag-row"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+    </div>
+    <div class="stack-group">
+      <h4>Tools</h4>
+      <div class="tag-row"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Postman</span><span class="tag">VS Code</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<footer class="contact" id="contact">
+  <p class="eyebrow">Get in touch</p>
+  <h2>Let's build<br>something that holds.</h2>
+  <div class="contact-actions">
+    <a href="mailto:ayanfeoluwaayodele21@gmail.com" class="btn btn-primary">ayanfeoluwaayodele21@gmail.com</a>
+  </div>
+  <div class="contact-links">
+    <a href="https://github.com/ayanfe-arch" target="_blank" rel="noopener">GitHub</a>
+    <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+    <span>08141989017</span>
+  </div>
+  <p class="footer-note">Ile-Ife, Osun State, Nigeria — © 2026 Ayanfe Ajibola</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

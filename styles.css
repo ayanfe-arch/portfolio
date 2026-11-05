@@ -445,3 +445,64 @@ em{font-style:italic;color:var(--accent-soft);}
 .contact-links a:hover{color:var(--accent-soft);}
 .footer-note{font-family:var(--mono); font-size:0.75rem; color:var(--text-dim); opacity:0.6;}
 
+
+/* ---- responsive layout: tablet and phone ---- */
+@media (max-width: 768px){
+  html, body{overflow-x:hidden;}
+  .hero, .hero-text, .hero-visual, .about-copy, .profile-column, .project-card, .project-info{min-width:0;}
+  .hero{padding:3.5rem 5vw 4.5rem; gap:2.5rem;}
+  .about{padding:4.5rem 5vw;}
+  .about > .profile-column{grid-column:auto;}
+
+  .work, .stack{padding-left:5vw; padding-right:5vw;}
+  .contact{padding:3.5rem 5vw 4rem;}
+  .hero-sub, .project-info p, .project-points, .git-line{overflow-wrap:anywhere;}
+  .terminal-body{font-size:0.78rem; padding:1rem;}
+  .project-visual{padding:1.15rem;}
+  .project-info{padding:1.4rem;}
+  .contact-links{gap:1.25rem;}
+}
+
+@media (max-width: 480px){
+  .topbar{
+    top:0.5rem;
+    width:calc(100% - 1rem);
+    margin-top:0.5rem;
+    gap:0.5rem;
+    padding:0.55rem 0.6rem;
+  }
+  .topbar-name{font-size:0.9rem;}
+  .topbar-actions{margin-left:auto; gap:0.3rem; padding-left:0.5rem;}
+  .topbar-icon{width:2.1rem; height:2.1rem; flex:0 0 2.1rem;}
+  .topbar-icon svg{width:0.95rem; height:0.95rem;}
+
+  .hero{padding:2.75rem 1rem 3.5rem; gap:2rem;}
+  .hero h1{font-size:clamp(2rem, 10vw, 2.35rem); margin-bottom:1.1rem;}
+  .hero-sub{font-size:0.95rem; margin-bottom:1.5rem;}
+  .hero-actions{gap:0.75rem;}
+  .hero-actions .btn{width:100%; justify-content:center;}
+
+  .terminal-body{min-height:0; padding:0.9rem; font-size:0.69rem; line-height:1.55; overflow-wrap:anywhere;}
+  .terminal-title{font-size:0.68rem;}
+  .git-card{position:relative; right:auto; bottom:auto; width:100%; margin-top:1rem;}
+  .git-line{font-size:0.68rem;}
+
+  .about{padding:3.5rem 1rem; gap:1.5rem;}
+  .about-copy .brow{font-size:1rem;}
+  .about-copy h2{font-size:clamp(1.85rem, 9vw, 2.3rem);}
+  .profile-card{padding:1.25rem;}
+  .profile-row{gap:0.75rem;}
+
+  .work, .stack{padding:1.5rem 1rem 4rem;}
+  .project-grid{gap:1rem;}
+  .project-visual{padding:0.85rem;}
+  .mini-code{padding:0.8rem; font-size:0.68rem; line-height:1.55;}
+  .project-info{padding:1.2rem;}
+  .project-info h3{font-size:1.08rem;}
+  .project-actions .btn{width:100%; justify-content:center;}
+
+  .contact{padding:3rem 1rem;}
+  .contact h2{margin-bottom:1.5rem;}
+  .contact-actions .btn{width:100%; justify-content:center;}
+  .contact-links{gap:0.85rem 1.1rem; margin-bottom:2rem;}
+}
